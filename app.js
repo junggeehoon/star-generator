@@ -1,5 +1,5 @@
 const request = require('request');
-const timesOfRequest = 30;
+const timesOfRequest = 10;
 const numberOfImage = 86;
 const data = require('./data');
 const fs = require('fs');
