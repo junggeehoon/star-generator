@@ -1,5 +1,5 @@
 const request = require('request');
-const timesOfRequest = 5;
+const timesOfRequest = 30;
 const numberOfImage = 86;
 const data = require('./data');
 const fs = require('fs');
@@ -42,7 +42,7 @@ postHandler = () => {
     asterisms: asterisms,
     img: fs.createReadStream(__dirname + `/img/${imageName}.png`)
   }
-  return request.post({url:'http://localhost:5000/star', formData: formData})
+  return request.post({url:'http://52.78.57.243:5000/star', formData: formData})
 }
 
 // loop for post request 
